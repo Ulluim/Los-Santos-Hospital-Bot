@@ -30,7 +30,7 @@ Server owners and administrators who add the bot are responsible for configuring
 * **AXDEVS** reserves the right to block or restrict access for any user or server that violates these Terms, abuses the bot, or poses a risk to the bot or Discord's platform.
 
 ## 5. Data & Privacy
-Operating the bot may involve processing Discord identifiers (such as user, server, or channel IDs) and inputs necessary to execute commands or configurations. Any data handling is subject to our Privacy Policy (`https://github.com/Ulluim/Los-Santos-Hospital-Bot/blob/main/Privacy%20Policy.md). Data is not sold to third parties for commercial advertising.
+Operating the bot may involve processing Discord identifiers (such as user, server, or channel IDs) and inputs necessary to execute commands or configurations. Any data handling is subject to our [Privacy Policy](https://github.com/Ulluim/Los-Santos-Hospital-Bot/blob/main/Privacy%20Policy.md).. Data is not sold to third parties for commercial advertising.
 
 ## 6. Intellectual Property
 All code, branding, designs, and original assets associated with the bot and **AXDEVS** remain the property of their respective owners, except for third-party libraries or assets governed by their own licenses.
