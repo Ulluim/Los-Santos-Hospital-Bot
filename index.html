@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AXDEVS — Legal & Privacy</title>
+  <title>AXDEVS — Los Santos Hospital Bot Legal</title>
+  <meta name="description" content="Official Terms of Service and Privacy Policy for Los Santos Hospital Bot by AXDEVS." />
+  <meta property="og:title" content="AXDEVS — Legal Center" />
+  <meta property="og:description" content="Terms of Service and Privacy Policy for Los Santos Hospital Bot." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ulluim.github.io/Los-Santos-Hospital-Bot/axdevs-logo.jpg" />
   <style>
     :root {
       --bg: #090a0f;
@@ -11,6 +16,7 @@
       --text: #e6e8f0;
       --muted: #9aa0b8;
       --accent: #7c3aed;
+      --accent-hover: #6d28d9;
       --accent-soft: rgba(124, 58, 237, 0.16);
       --border: rgba(255, 255, 255, 0.08);
     }
@@ -26,7 +32,8 @@
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
       line-height: 1.65;
-      padding: 40px 18px 80px;
+      padding: 40px 18px 90px;
+      min-height: 100vh;
     }
 
     .container {
@@ -56,7 +63,13 @@
     h1 {
       font-size: 2rem;
       letter-spacing: -0.02em;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
     }
 
     .badges {
@@ -167,11 +180,72 @@
       text-decoration: underline;
     }
 
+    .contact-box {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .copy-btn {
+      background: #181b28;
+      color: #e6e8f0;
+      border: 1px solid rgba(167, 139, 250, 0.35);
+      border-radius: 8px;
+      padding: 5px 11px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .copy-btn:hover {
+      background: var(--accent-soft);
+    }
+
+    .top-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, background 0.2s ease;
+    }
+
+    .top-btn.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .top-btn:hover {
+      background: var(--accent-hover);
+    }
+
     footer {
       text-align: center;
       color: var(--muted);
       font-size: 0.85rem;
       margin-top: 28px;
+    }
+
+    @media (max-width: 600px) {
+      .doc-card, .hero {
+        padding: 22px 18px;
+      }
+
+      h1 {
+        font-size: 1.65rem;
+      }
     }
   </style>
 </head>
@@ -180,14 +254,15 @@
     <header class="hero">
       <img src="axdevs-logo.jpg" alt="AXDEVS Logo" class="logo" />
       <h1>AXDEVS Legal Center</h1>
+      <p class="subtitle">Los Santos Hospital Bot · Official Documentation</p>
       <div class="badges">
         <span class="badge">Updated: Nov 22, 2026</span>
         <span class="badge">Team: AXDEVS</span>
         <span class="badge">Discord Bot</span>
       </div>
       <div class="nav-tabs">
-        <button class="tab-btn active" onclick="switchTab('tos', this)">Terms of Service</button>
-        <button class="tab-btn" onclick="switchTab('privacy', this)">Privacy Policy</button>
+        <button id="btn-tos" class="tab-btn active" onclick="switchTab('tos', this)">Terms of Service</button>
+        <button id="btn-privacy" class="tab-btn" onclick="switchTab('privacy', this)">Privacy Policy</button>
       </div>
     </header>
 
@@ -227,7 +302,11 @@
         <p>All code, branding, designs, and original assets associated with the bot and <strong>AXDEVS</strong> remain the property of their respective owners, except for third-party libraries or assets governed by their own licenses.</p>
 
         <h3>7. Contact &amp; Support</h3>
-        <p>For questions, bug reports, or support requests, reach out to <strong>AXDEVS</strong> at <a href="mailto:xloraalmonte@gmail.com">xloraalmonte@gmail.com</a>.</p>
+        <p>For questions, bug reports, or support requests, reach out to <strong>AXDEVS</strong>:</p>
+        <div class="contact-box">
+          <a href="mailto:xloraalmonte@gmail.com">xloraalmonte@gmail.com</a>
+          <button type="button" class="copy-btn" onclick="copyEmail(this)">Copy Email</button>
+        </div>
       </section>
 
       <!-- PRIVACY POLICY -->
@@ -273,7 +352,11 @@
         <p>We may update this Privacy Policy from time to time as the Bot evolves or platform requirements change. The date at the top indicates the latest revisions.</p>
 
         <h3>8. Contact Us</h3>
-        <p>If you have questions about this Privacy Policy or data requests for <strong>AXDEVS</strong>, please reach out at <a href="mailto:xloraalmonte@gmail.com">xloraalmonte@gmail.com</a>.</p>
+        <p>If you have questions about this Privacy Policy or data requests for <strong>AXDEVS</strong>, please reach out:</p>
+        <div class="contact-box">
+          <a href="mailto:xloraalmonte@gmail.com">xloraalmonte@gmail.com</a>
+          <button type="button" class="copy-btn" onclick="copyEmail(this)">Copy Email</button>
+        </div>
       </section>
     </main>
 
@@ -282,20 +365,61 @@
     </footer>
   </div>
 
+  <button id="topBtn" type="button" class="top-btn" onclick="scrollToTop()">↑ Top</button>
+
   <script>
-    function switchTab(tabId, btn) {
+    const SUPPORT_EMAIL = "xloraalmonte@gmail.com";
+
+    function switchTab(tabId, btn, updateHash = true) {
       document.querySelectorAll('.doc-section').forEach(sec => sec.classList.remove('active'));
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-      if (btn) btn.classList.add('active');
+
+      const targetSection = document.getElementById(tabId);
+      const targetBtn = btn || document.getElementById('btn-' + tabId);
+
+      if (targetSection) targetSection.classList.add('active');
+      if (targetBtn) targetBtn.classList.add('active');
+
+      if (updateHash) {
+        history.replaceState(null, '', '#' + tabId);
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function openPrivacyFromLink(e) {
       e.preventDefault();
-      const buttons = document.querySelectorAll('.tab-btn');
-      switchTab('privacy', buttons[1]);
+      switchTab('privacy', document.getElementById('btn-privacy'), true);
     }
+
+    function copyEmail(btn) {
+      navigator.clipboard.writeText(SUPPORT_EMAIL).then(() => {
+        const original = btn.textContent;
+        btn.textContent = "Copied!";
+        setTimeout(() => {
+          btn.textContent = original;
+        }, 1600);
+      });
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', () => {
+      const topBtn = document.getElementById('topBtn');
+      if (window.scrollY > 260) {
+        topBtn.classList.add('visible');
+      } else {
+        topBtn.classList.remove('visible');
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash === 'privacy' || hash === 'tos') {
+        switchTab(hash, document.getElementById('btn-' + hash), false);
+      }
+    });
   </script>
 </body>
 </html>
