@@ -1,7 +1,16 @@
+<div align="center">
+
+<img src="axdevs-logo.jng" alt="AXDEVS Logo" width="110" />
+
 # Privacy Policy
 
-**Last updated:** November 22, 2026  
-**Team / Developer:** AXDEVS
+![Last Updated](https://img.shields.io/badge/Last%20Updated-Nov%2022%2C%202026-6d28d9?style=for-the-badge)
+![Developer](https://img.shields.io/badge/Developer-AXDEVS-1e1b4b?style=for-the-badge)
+![Bot](https://img.shields.io/badge/Bot-Los%20Santos%20Hospital%20Bot-312e81?style=for-the-badge)
+
+</div>
+
+---
 
 ## 1. Introduction
 **AXDEVS** ("we," "our," or "us") respects your privacy and is committed to protecting information processed when you invite, add, or interact with our Discord bot (Los Santos Hospital Bot). This Privacy Policy explains what information may be processed, how it is used, how long it is kept, and your choices regarding your data.
@@ -35,7 +44,7 @@ We do not sell or rent user or server data. Data may only be shared or accessed 
 Server administrators or users may request information about or deletion of associated data (where applicable) by contacting **AXDEVS** using the contact method listed below. Please include relevant Discord IDs (such as your User ID or Server ID) so we can locate and process the request.
 
 ## 7. Changes to This Privacy Policy
-We may update this Privacy Policy from time to time as the Bot evolves or legal/platform requirements change. The "Last updated" date at the top indicates when the latest revisions were made.
+We may update this Privacy Policy from time to time as the Bot evolves or legal/platform requirements change. The badge and date at the top indicate when the latest revisions were made.
 
 ## 8. Contact Us
 If you have questions about this Privacy Policy or data requests for **AXDEVS**, please reach out at `xloraalmonte@gmail.com`.
