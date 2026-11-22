@@ -1,14 +1,14 @@
-<div align="center">
-
-<img src="axdevs-logo.jpg" alt="AXDEVS Logo" width="110" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Ulluim/Los-Santos-Hospital-Bot/main/axdevs-logo.jpg" alt="AXDEVS Logo" width="110" />
+</p>
 
 # Privacy Policy
 
-![Last Updated](https://img.shields.io/badge/Last%20Updated-Nov%2022%2C%202026-6d28d9?style=for-the-badge)
-![Developer](https://img.shields.io/badge/Developer-AXDEVS-1e1b4b?style=for-the-badge)
-![Bot](https://img.shields.io/badge/Bot-Los%20Santos%20Hospital%20Bot-312e81?style=for-the-badge)
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Last%20Updated-Nov%2022%2C%202026-6d28d9?style=for-the-badge" alt="Last Updated" />
+  <img src="https://img.shields.io/badge/Developer-AXDEVS-1e1b4b?style=for-the-badge" alt="Developer" />
+  <img src="https://img.shields.io/badge/Platform-Discord-5865F2?style=for-the-badge" alt="Platform" />
+</p>
 
 ---
 
