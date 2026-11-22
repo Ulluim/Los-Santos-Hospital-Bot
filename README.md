@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="axdevs-logo.jpg" alt="AXDEVS Logo" width="110" />
+<img src="axdevs-logo.png" alt="AXDEVS Logo" width="110" />
 
 # Terms of Service
 
@@ -9,8 +9,6 @@
 ![Platform](https://img.shields.io/badge/Platform-Discord-5865F2?style=for-the-badge)
 
 </div>
-
----
 
 ## 1. Acceptance of Terms
 By inviting, adding, or interacting with this bot on Discord, you agree to be bound by these Terms of Service ("Terms") and Discord's official Terms of Service and Community Guidelines. If you do not agree with these Terms, please do not use the bot or keep it in your server.
