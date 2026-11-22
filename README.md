@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="axdevs-logo.png" alt="AXDEVS Logo" width="110" />
+<img src="axdevs-logo.jng" alt="AXDEVS Logo" width="110" />
 
 # Terms of Service
 
